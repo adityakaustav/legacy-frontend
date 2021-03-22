@@ -1,12 +1,16 @@
 import React from 'react';
-import LoginPage from './Pages/LoginPage';
+//import SignUpNext from './Pages/SignUp/SignUpNext';
+import NavbarCommon from './Pages/NavbarCommon';
+// import SignUp from './Pages/SignUp/SignUp';
+//import Login from './Pages/Login/Login';
 import './App.css';
-
 function App() {
   return (
     <div className="App">
-    <LoginPage />
-
+    {/* <SignUpNext /> */}
+    <NavbarCommon />
+    {/* <SignUp /> */}
+    {/* <Login /> */}
     </div>
   );
 }
