@@ -20,6 +20,7 @@ import Button from '@material-ui/core/Button';
 import Avatar from '@material-ui/core/Avatar';
 import SettingsIcon from '@material-ui/icons/Settings';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import { borderBottom } from '@material-ui/system';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -28,6 +29,19 @@ const useStyles = makeStyles((theme) => ({
             color: '#172b4d',
             textTransform: 'capitalize'
         },
+    },
+    buttonClassHover: {
+        height: "64px",
+        borderBottom: "solid 3px #fff",
+        borderRadius: '0px',
+
+        "&:hover": {
+            background: 'none',
+            borderBottom: "solid 3px #0052cc",
+        },
+        // "&:last-child": {
+        //   borderRight: "solid 1px #cccccc"
+        // }
     },
     avatarClass: {
         display: 'flex',
@@ -190,7 +204,7 @@ export default function PrimarySearchAppBar() {
 
     return (
         <div className={classes.grow}>
-            <AppBar elevation={2} position="static" style={{ background: '#fff', color: '#172b4d', }}>
+            <AppBar elevation={2} position="static" style={{ background: '#fff', color: '#344563', }}>
                 <Toolbar>
                     <IconButton
                         edge="start"
@@ -219,13 +233,13 @@ export default function PrimarySearchAppBar() {
                     </div> */}
                     <div className={classes.buttonClass}>
                         {/* <Button>Default</Button> */}
-                        <Button color="primary">Home</Button>
-                        <Button color="primary">Primary</Button>
-                        <Button color="primary">Primary</Button>
-                        <Button endIcon={<ExpandMoreIcon />} color="primary">Primary</Button>
+                        <Button className={classes.buttonClassHover} color="primary">Home</Button>
+                        <Button className={classes.buttonClassHover} color="primary">Primary</Button>
+                        <Button className={classes.buttonClassHover} color="primary">Primary</Button>
+                        <Button className={classes.buttonClassHover} endIcon={<ExpandMoreIcon />} color="primary">Primary</Button>
                         {/* <Button color="secondary">Secondary</Button>
                         <Button disabled>Disabled</Button> */}
-                        <Button href="#text-buttons" color="primary">
+                        <Button className={classes.buttonClassHover} href="#text-buttons" color="primary">
                             Link
                         </Button>
                     </div>

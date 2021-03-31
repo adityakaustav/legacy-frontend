@@ -39,7 +39,6 @@ const useStyles = makeStyles((theme) => ({
         borderRadius: '78px',
         border: '3px solid white',
         marginTop: '-78px',
-        //marginLeft: '2%'
     },
     iconSize: {
         fontSize: 'large',
@@ -48,17 +47,18 @@ const useStyles = makeStyles((theme) => ({
         fontSize: 12.5,
         color: '#172b4d',
         fontWeight: 500,
+        marginTop: '6%'
     },
     title2: {
-        fontSize: 10,
+        fontSize: 12,
         color: "#172b4d",
         fontWeight: 300,
         display: 'flex',
-        lineHeight: '320%'
+        lineHeight: '200%'
     },
     hrLine: {
         borderTop: "1px solid #EBECF0",
-        marginBottom: '8%',
+        marginBottom: '4%',
     },
     paperLeft: {
         padding: theme.spacing(1),
