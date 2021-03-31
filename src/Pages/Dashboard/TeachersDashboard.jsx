@@ -37,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
         width: 150,
         height: 150,
         borderRadius: '78px',
-        border: '3px solid white',
+        border: '4px solid white',
         marginTop: '-78px',
     },
     iconSize: {

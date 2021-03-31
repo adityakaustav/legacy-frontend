@@ -9,18 +9,15 @@ import Typography from '@material-ui/core/Typography';
 import Badge from '@material-ui/core/Badge';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
-//import MenuIcon from '@material-ui/icons/Menu';
-import AppsIcon from '@material-ui/icons/Apps';
-//import SearchIcon from '@material-ui/icons/Search';
-import AccountCircle from '@material-ui/icons/AccountCircle';
-import MailIcon from '@material-ui/icons/Mail';
-import NotificationsIcon from '@material-ui/icons/Notifications';
-import MoreIcon from '@material-ui/icons/MoreVert';
+import AppSwitcherIcon from '@atlaskit/icon/glyph/app-switcher';
+import PersonCircleIcon from '@atlaskit/icon/glyph/person-circle';
+import EmailIcon from '@atlaskit/icon/glyph/email';
+import NotificationIcon from '@atlaskit/icon/glyph/notification';
+import MoreVerticalIcon from '@atlaskit/icon/glyph/more-vertical';
 import Button from '@material-ui/core/Button';
 import Avatar from '@material-ui/core/Avatar';
-import SettingsIcon from '@material-ui/icons/Settings';
+import SettingsIcon from '@atlaskit/icon/glyph/settings';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import { borderBottom } from '@material-ui/system';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -152,6 +149,8 @@ export default function PrimarySearchAppBar() {
         >
             <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
             <MenuItem onClick={handleMenuClose}>My account</MenuItem>
+            <MenuItem onClick={handleMenuClose}>abcd</MenuItem>
+            <MenuItem onClick={handleMenuClose}>efgh</MenuItem>
         </Menu>
     );
 
@@ -169,7 +168,7 @@ export default function PrimarySearchAppBar() {
             <MenuItem>
                 <IconButton aria-label="show 4 new mails" color="inherit">
                     <Badge badgeContent={4} color="secondary">
-                        <MailIcon />
+                        <EmailIcon />
                     </Badge>
                 </IconButton>
                 <p>Messages</p>
@@ -177,7 +176,7 @@ export default function PrimarySearchAppBar() {
             <MenuItem>
                 <IconButton aria-label="show 11 new notifications" color="inherit">
                     <Badge badgeContent={11} color="secondary">
-                        <NotificationsIcon />
+                        <NotificationIcon />
                     </Badge>
                 </IconButton>
                 <p>Notifications</p>
@@ -195,7 +194,7 @@ export default function PrimarySearchAppBar() {
                     aria-haspopup="true"
                     color="inherit"
                 >
-                    <AccountCircle />
+                    <PersonCircleIcon />
                 </IconButton>
                 <p>Profile</p>
             </MenuItem>
@@ -212,7 +211,7 @@ export default function PrimarySearchAppBar() {
                         color="inherit"
                         aria-label="open drawer"
                     >
-                        <AppsIcon />
+                        <AppSwitcherIcon />
                     </IconButton>
                     <Avatar className={classes.avatarClass} alt="Soa University" src="https://www.pikpng.com/pngl/m/163-1630185_s-o-a-university-siksha-o-anusandhan-university.png" />
                     <Typography className={classes.title} variant="h6" noWrap>
@@ -232,13 +231,9 @@ export default function PrimarySearchAppBar() {
                         />
                     </div> */}
                     <div className={classes.buttonClass}>
-                        {/* <Button>Default</Button> */}
                         <Button className={classes.buttonClassHover} color="primary">Home</Button>
                         <Button className={classes.buttonClassHover} color="primary">Primary</Button>
-                        <Button className={classes.buttonClassHover} color="primary">Primary</Button>
                         <Button className={classes.buttonClassHover} endIcon={<ExpandMoreIcon />} color="primary">Primary</Button>
-                        {/* <Button color="secondary">Secondary</Button>
-                        <Button disabled>Disabled</Button> */}
                         <Button className={classes.buttonClassHover} href="#text-buttons" color="primary">
                             Link
                         </Button>
@@ -247,12 +242,12 @@ export default function PrimarySearchAppBar() {
                     <div className={classes.sectionDesktop}>
                         <IconButton aria-label="show 4 new mails" color="inherit">
                             <Badge badgeContent={4} color="secondary">
-                                <MailIcon />
+                                <EmailIcon />
                             </Badge>
                         </IconButton>
                         <IconButton aria-label="show 17 new notifications" color="inherit">
-                            <Badge badgeContent={17} color="secondary">
-                                <NotificationsIcon />
+                            <Badge badgeContent={1} color="primary">
+                                <NotificationIcon />
                             </Badge>
                         </IconButton>
                         <IconButton color="inherit"><SettingsIcon /></IconButton>
@@ -264,7 +259,7 @@ export default function PrimarySearchAppBar() {
                             onClick={handleProfileMenuOpen}
                             color="inherit"
                         >
-                            <AccountCircle />
+                            <PersonCircleIcon />
                         </IconButton>
                     </div>
                     <div className={classes.sectionMobile}>
@@ -275,7 +270,7 @@ export default function PrimarySearchAppBar() {
                             onClick={handleMobileMenuOpen}
                             color="inherit"
                         >
-                            <MoreIcon />
+                            <MoreVerticalIcon />
                         </IconButton>
                     </div>
                 </Toolbar>
