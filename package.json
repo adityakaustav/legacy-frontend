@@ -6,6 +6,7 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "node-sass": "^5.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
@@ -18,7 +19,7 @@
     "eject": "react-scripts eject",
     "lint": "eslint '**/*.js",
     "lint:fix": "prettier-eslint '**/*.js --write",
-    "format": "prettier --write \"**/*.+(js|jsx|json|yml|yaml|css|md|vue)\""
+    "format": "prettier --write \"**/*.+(js|jsx|json|yml|yaml|css|scss|sass|md|vue)\""
   },
   "eslintConfig": {
     "extends": [
@@ -50,7 +51,7 @@
     }
   },
   "lint-staged": {
-    "*.{js,json,css,md}": [
+    "*.{js,json,css,scss,sass,md}": [
       "prettier --single-quote --write",
       "git add"
     ]
