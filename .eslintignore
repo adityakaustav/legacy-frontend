@@ -1,0 +1,4 @@
+build/*.js
+config/*.js
+package.json
+package-lock.json
