@@ -49,7 +49,7 @@
     }
   },
   "lint-staged": {
-    "**/*.+(js|jsx|md|yml|yaml)": [
+    "**/*.+(js|jsx|json|md|yml|yaml)": [
       "./node_modules/.bin/eslint --fix",
       "./node_modules/.bin/prettier --write",
       "git add"
