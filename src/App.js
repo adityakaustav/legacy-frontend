@@ -1,25 +1,11 @@
-import React, {useState} from "react";
-import "./App.scss";
-
+import React from "react";
+// import BrandLogo from "./components/common/logos/brandLogo.jsx";
+// import ClientLogo from "./components/common/logos/clientLogo.jsx";
 function App() {
-  const [number, setNumber] = useState(0);
-  function addOne() {
-    setNumber(number + 2);
-  }
-  function subOne() {
-    setNumber(number - 1);
-  }
-
   return (
     <div className="App">
-      <button type="button" onClick={addOne}>
-        +
-      </button>
-      <button type="button" onClick={subOne}>
-        -
-      </button>
-      <br />
-      <h2>{number}</h2>
+      {/* <BrandLogo /> */}
+      {/* <ClientLogo /> */}
     </div>
   );
 }

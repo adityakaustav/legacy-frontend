@@ -1,4 +1,4 @@
-//Font Weight Variables
+// Font Weight Variables
 export const extraLightFont = 200;
 
 export const lightFont = 300;
