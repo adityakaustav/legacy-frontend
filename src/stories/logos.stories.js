@@ -5,8 +5,7 @@ import {AccountLogo} from "../Infra/Components/common/logos/accountLogo.jsx";
 export default {
   title: "Logo",
   component: BrandLogo,
-  // eslint-disable-next-line comma-dangle
-  AccountLogo,
+  AccountLogo
 };
 
 export const LogoBrand = () => <BrandLogo />;

@@ -14,8 +14,7 @@ import {
   SuccessButtonSmall,
   DisabledButtonLarge,
   DisabledButtonMedium,
-  // eslint-disable-next-line comma-dangle
-  DisabledButtonSmall,
+  DisabledButtonSmall
 } from "../Infra/Components/common/buttons/button.jsx";
 
 export default {
@@ -34,8 +33,7 @@ export default {
   SuccessButtonSmall,
   DisabledButtonLarge,
   DisabledButtonMedium,
-  // eslint-disable-next-line comma-dangle
-  DisabledButtonSmall,
+  DisabledButtonSmall
 };
 
 export const LargePrimary = () => <PrimaryButtonLarge>Primary</PrimaryButtonLarge>;

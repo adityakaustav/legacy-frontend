@@ -9,20 +9,20 @@ import {
   currentPrimaryRed,
   // eslint-disable-next-line comma-dangle
   // eslint-disable-next-line prettier/prettier
-  currentPrimaryGreen,
+  currentPrimaryGreen
 } from "../../../Assets/Style/globalColors";
 import {
   mediumFont,
   // eslint-disable-next-line comma-dangle
   // eslint-disable-next-line prettier/prettier
-  regularFont,
+  regularFont
 } from "../../../Assets/Style/globalFontWeights";
 import {
   buttonLarge,
   buttonMedium,
   // eslint-disable-next-line comma-dangle
   // eslint-disable-next-line prettier/prettier
-  buttonSmall,
+  buttonSmall
 } from "../../../Assets/Style/globalTypography";
 
 const StyledButton = styled.button`

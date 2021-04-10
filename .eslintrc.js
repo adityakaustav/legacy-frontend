@@ -5,18 +5,18 @@ module.exports = {
   parser: "babel-eslint",
   parserOptions: {
     ecmaVersion: 6,
-    sourceType: "module",
+    sourceType: "module"
   },
   env: {
     browser: true,
     jest: true,
     es6: true,
-    node: true,
+    node: true
   },
   extends: ["airbnb-base", "plugin:prettier/recommended"],
   rules: {
     "react/jsx-filename-extension": "off",
-    "no-unused-vars": 1,
+    "no-unused-vars": 0,
     "no-multiple-empty-lines": 2,
     "class-methods-use-this": 0,
     "comma-dangle": ["error", "never"],
@@ -29,6 +29,6 @@ module.exports = {
     // allow async-await
     "generator-star-spacing": 0,
     // allow debugger during development
-    "no-debugger": process.env.NODE_ENV === "production" ? 2 : 0,
-  },
+    "no-debugger": process.env.NODE_ENV === "production" ? 2 : 0
+  }
 };
